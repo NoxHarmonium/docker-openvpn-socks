@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
 set -e
+echo "'up' script executing. Passing to standard openvpn up script..."
 /etc/openvpn/up.sh "$@"
+echo "Starting socksd..."
 exec sockd -D
