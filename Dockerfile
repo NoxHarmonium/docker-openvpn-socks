@@ -3,7 +3,8 @@ FROM alpine:3.21.2
 RUN apk --no-cache add \
     dante-server \
     gettext \
-    openvpn
+    openvpn \
+    curl
 
 ENV OPENVPN_CONFIG_FILE=/config/config.ovpn \
     OPENVPN_USERNAME= \
